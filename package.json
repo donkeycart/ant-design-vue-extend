@@ -1,11 +1,12 @@
 {
     "name": "ant-design-vue-extend",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "scripts": {
         "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
         "build:preview": "vue-cli-service build --mode preview",
         "postinstall": "opencollective-postinstall",
-        "build-bundle": "vue-cli-service build --target lib --name personal-component-set ./src/components/index.js",
+        "build-bundle": "vue-cli-service build --target lib --ant-design-vue-extend ./packages/index.js",
         "docs:dev": "vuepress dev docs",
         "docs:build": "vuepress build docs"
     },

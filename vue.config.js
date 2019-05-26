@@ -11,7 +11,7 @@ module.exports = {
         'vue-echarts',
         'resize-detector'
     ],
-    outputDir: 'target/dist',
+    outputDir: 'dist',
     pages: {
         'index': {
             entry: 'examples/main.js',
