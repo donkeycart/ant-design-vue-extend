@@ -14,16 +14,10 @@ module.exports = {
     outputDir: 'target/dist',
     pages: {
         'index': {
-            entry: 'src/main/frontend/index.js',
+            entry: 'examples/main.js',
             template: 'public/index.html',
             filename: 'index.html',
             chunks: ['chunk-vendors', 'chunk-common', 'index']
-        },
-        'login': {
-            entry: 'src/main/frontend/login.js',
-            template: 'public/login.html',
-            filename: 'login.html',
-            chunks: ['chunk-vendors', 'chunk-common', 'login']
         }
     },
     configureWebpack: {
@@ -34,17 +28,9 @@ module.exports = {
     },
     chainWebpack: config => {
         config.resolve.alias
-            .set('@', resolve('src/main/frontend'))
-            .set('@$', resolve('src/main/frontend'))
-            .set('@api', resolve('src/main/frontend/api'))
-            .set('@assets', resolve('src/main/frontend/assets'))
-            .set('@comp', resolve('src/main/frontend/components'))
-            .set('@views', resolve('src/main/frontend/views'))
-            .set('@layout', resolve('src/main/frontend/layout'))
-            .set('@static', resolve('src/main/frontend/static'))
-            .set('@config', resolve('src/main/frontend/config'))
-            .set('@store', resolve('src/main/frontend/store'))
-            .set('@utils', resolve('src/main/frontend/utils'))
+            .set('@', resolve('packages'))
+            .set('@$', resolve('packages'))
+            .set('@utils', resolve('packages/utils'))
 
         const svgRule = config.module.rule('svg')
         svgRule.uses.clear()
@@ -68,22 +54,10 @@ module.exports = {
         watchOptions: {
             ignored: /node_modules/
         },
-        port: 9020,
+        port: 9040,
         hotOnly: false,
         hot: true,
-        compress: true,
-        proxy: {
-            '/api': {
-                target: 'http://localhost:8090/',
-                changeOrigin: true,
-                ws: false
-            },
-            '/login': {
-                target: 'http://localhost:8090/',
-                changeOrigin: true,
-                ws: false
-            }
-        }
+        compress: true
     },
     runtimeCompiler: true,
     productionSourceMap: true,

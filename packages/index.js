@@ -17,7 +17,7 @@ import CountDown from '@/components/CountDown'
 import Ellipsis from '@/components/Ellipsis'
 import FooterToolbar from '@/components/FooterToolbar'
 import NumberInfo from '@/components/NumberInfo'
-import DescriptionList from '@/components/DescriptionList'
+import DetailList from '@/components/DescriptionList'
 import Tree from '@/components/Tree/Tree'
 import Trend from '@/components/Trend'
 import STable from '@/components/Table'
@@ -29,7 +29,7 @@ import ExceptionPage from '@/components/Exception'
 import StandardFormRow from '@/components/StandardFormRow'
 import ArticleListContent from '@/components/ArticleListContent'
 
-export {
+export default {
     AvatarList,
     Bar,
     ChartCard,
@@ -47,9 +47,7 @@ export {
     Ellipsis,
     FooterToolbar,
     NumberInfo,
-    DescriptionList,
-    // 兼容写法，请勿继续使用
-    DescriptionList as DetailList,
+    DetailList,
     Tree,
     STable,
     MultiTab,

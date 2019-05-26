@@ -17,7 +17,7 @@
 
 <script>
 import Logo from '@/components/tools/Logo'
-import SMenu from './index'
+import SMenu from '.'
 import { mixin, mixinDevice } from '@/utils/mixin'
 
 export default {

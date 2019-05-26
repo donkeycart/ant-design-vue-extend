@@ -64,14 +64,6 @@ export default {
         }
     }),
     watch: {
-        'localPagination.current' (val) {
-            this.$router.push({
-                name: this.$route.name,
-                params: Object.assign({}, this.$route.params, {
-                    pageNo: val
-                })
-            })
-        },
         pageNum (val) {
             Object.assign(this.localPagination, {
                 current: val
