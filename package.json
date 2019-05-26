@@ -1,5 +1,5 @@
 {
-    "name": "ant-design-vue-extend",
+    "name": "ant-vue-extend",
     "version": "0.0.4",
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -48,6 +48,7 @@
         "examples",
         "packages",
         "docs",
+        "dist",
         "README.md",
         "vue.config.js",
         "package.json",
