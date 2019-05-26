@@ -60,9 +60,12 @@ const components = [
 const install = function (Vue) {
     if (install.installed) return
     components.forEach(component => {
-        console.log(component.name)
         Vue.component(component.name, component)
     })
+}
+
+if (typeof window !== 'undefined' && window.Vue) {
+    install(window.Vue)
 }
 
 export default {

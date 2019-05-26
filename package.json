@@ -1,14 +1,6 @@
 {
-    "name": "@nanfeng/ant-design-vue-extend",
-    "version": "0.0.1",
-    "private": false,
-    "files": [
-        "dist/*",
-        "src/*",
-        "public/*",
-        "*.json",
-        "*.js"
-    ],
+    "name": "ant-design-vue-extend",
+    "version": "0.0.3",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build:preview": "vue-cli-service build --mode preview",
@@ -51,6 +43,15 @@
         "vue-template-compiler": "^2.5.22",
         "vuepress": "^0.14.11"
     },
+    "files": [
+        "examples",
+        "packages",
+        "docs",
+        "README.md",
+        "vue.config.js",
+        "package.json",
+        "types"
+    ],
     "eslintConfig": {
         "root": true,
         "env": {
