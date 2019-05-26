@@ -12,6 +12,12 @@
         <div>
             <icon-select @change="handleIconChange"/>
         </div>
+
+        <count-down :target="new Date().getTime() + 3000000" :on-end="onEndHandle" />
+
+        <footer-tool-bar extra="扩展信息提示">
+            <a-button type="primary" @click="validate" :loading="loading">提交</a-button>
+        </footer-tool-bar>
     </div>
 </template>
 
@@ -26,6 +32,7 @@ export default {
     data () {
         return {
             selectedRowKeys: [],
+            loading: false,
             columns: [
                 {
                     title: '规则编号',
@@ -94,6 +101,9 @@ export default {
         },
         handleIconChange (icon) {
             console.log('change Icon', icon)
+        },
+        validate (e) {
+            console.log(e)
         }
     }
 }
