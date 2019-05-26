@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import Breadcrumb from '@/components/tools/Breadcrumb'
+import Breadcrumb from '@/packages/tools/Breadcrumb'
 
 export default {
     name: 'PageHeader',

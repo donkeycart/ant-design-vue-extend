@@ -18,7 +18,7 @@ IconSelector
 </template>
 
 <script>
-import IconSelector from '@/components/IconSelector'
+import IconSelector from '@/packages/IconSelector'
 
 export default {
   name: 'YourView',

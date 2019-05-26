@@ -8,6 +8,10 @@
             :data="loadData"
             :rowSelection="{ selectedRowKeys: selectedRowKeys, onChange: onSelectChange }">
         </s-table>
+
+        <div>
+            <icon-select @change="handleIconChange"/>
+        </div>
     </div>
 </template>
 
@@ -87,6 +91,9 @@ export default {
     methods: {
         onSelectChange (e) {
             console.log(e)
+        },
+        handleIconChange (icon) {
+            console.log('change Icon', icon)
         }
     }
 }

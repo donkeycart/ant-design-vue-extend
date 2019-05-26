@@ -47,8 +47,8 @@
 
 <script>
 
-import NoticeIcon from '@/components/NoticeIcon'
-import WebApps from '@/components/Webapp'
+import NoticeIcon from '@/NoticeIcon'
+import WebApps from '@/Webapp'
 import { mapGetters } from 'vuex'
 
 export default {

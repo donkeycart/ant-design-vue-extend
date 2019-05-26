@@ -2,13 +2,12 @@ import T from 'ant-design-vue/es/table/Table'
 import get from 'lodash.get'
 
 export default {
+    name: 'STable',
     data () {
         return {
             needTotalList: [],
-
             selectedRows: [],
             selectedRowKeys: [],
-
             localLoading: false,
             localDataSource: [],
             localPagination: Object.assign({}, this.pagination)

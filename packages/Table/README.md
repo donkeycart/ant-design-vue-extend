@@ -31,7 +31,7 @@ Table 重封装组件说明
 </template>
 
 <script>
-  import STable from '@/components/table/'
+  import STable from '@/table/'
 
   export default {
     components: {
@@ -130,7 +130,7 @@ Table 重封装组件说明
 </template>
 
 <script>
-  import STable from '@/components/table/'
+  import STable from '@/table/'
 
   export default {
     components: {
@@ -233,7 +233,7 @@ alert: {
 > 你可能需要为了与后端提供的接口返回结果一致而去修改以下代码：
 (需要注意的是，这里的修改是全局性的，意味着整个项目所有使用该 table 组件都需要遵守这个返回结果定义的字段。)
 
-修改 `@/components/table/index.js`  第 132 行起
+修改 `@/table/index.js`  第 132 行起
 
 
 

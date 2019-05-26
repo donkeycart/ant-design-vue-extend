@@ -1,6 +1,6 @@
 <script>
 import Tooltip from 'ant-design-vue/es/tooltip'
-import { cutStrByFullLength, getStrFullLength } from '@/components/_util/util'
+import { cutStrByFullLength, getStrFullLength } from '@/_util/util'
 
 export default {
     name: 'Ellipsis',
@@ -48,9 +48,7 @@ export default {
         const str = this.$slots.default.map(vNode => vNode.text).join('')
         const fullLength = getStrFullLength(str)
         const strDom = tooltip && fullLength > length ? this.getTooltip(str, fullLength) : this.getStrDom(str, fullLength)
-        return (
-            strDom
-        )
+        return (strDom)
     }
 }
 </script>

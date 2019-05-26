@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Logo from '@/components/tools/Logo'
+import Logo from '@/tools/Logo'
 import SMenu from '.'
 import { mixin, mixinDevice } from '@/utils/mixin'
 

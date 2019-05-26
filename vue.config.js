@@ -30,7 +30,7 @@ module.exports = {
         config.resolve.alias
             .set('@', resolve('packages'))
             .set('@$', resolve('packages'))
-            .set('@utils', resolve('packages/utils'))
+            .set('@utils', resolve('packages/_utils'))
 
         const svgRule = config.module.rule('svg')
         svgRule.uses.clear()

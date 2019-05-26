@@ -8,7 +8,7 @@
 引用方式：
 
 ```javascript
-import AvatarList from '@/components/AvatarList'
+import AvatarList from '@/packages/AvatarList'
 const AvatarListItem = AvatarList.AvatarItem
 
 export default {

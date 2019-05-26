@@ -13,7 +13,7 @@
 引用方式：
 
 ```javascript
-import FooterToolBar from '@/components/FooterToolbar'
+import FooterToolBar from '@/FooterToolbar'
 
 export default {
     components: {

@@ -7,7 +7,7 @@
 引用方式：
 
 ```javascript
-import Trend from '@/components/Trend'
+import Trend from '@/Trend'
 
 export default {
     components: {

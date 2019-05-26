@@ -7,7 +7,7 @@
 引用方式：
 
 ```javascript
-import Ellipsis from '@/components/Ellipsis'
+import Ellipsis from '@/Ellipsis'
 
 export default {
     components: {

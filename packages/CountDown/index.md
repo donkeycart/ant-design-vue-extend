@@ -7,7 +7,7 @@
 引用方式：
 
 ```javascript
-import CountDown from '@/components/CountDown/CountDown'
+import CountDown from '@/CountDown/CountDown'
 
 export default {
     components: {

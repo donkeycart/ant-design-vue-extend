@@ -7,7 +7,7 @@
 引用方式：
 
 ```javascript
-import NumberInfo from '@/components/NumberInfo'
+import NumberInfo from '@/packages/NumberInfo'
 
 export default {
     components: {
