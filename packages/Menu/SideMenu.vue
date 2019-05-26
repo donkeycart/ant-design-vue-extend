@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import Logo from '@/tools/Logo'
+import Logo from '../tools/Logo'
 import SMenu from '.'
-import { mixin, mixinDevice } from '@/utils/mixin'
+import { mixin, mixinDevice } from '../utils/mixin'
 
 export default {
     name: 'SideMenu',

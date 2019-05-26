@@ -36,11 +36,7 @@ export default {
         },
 
         renderSearch () {
-            return (
-                <Search placeholder="input search text"
-                    style="width: 100%; margin-bottom: 1rem"
-                />
-            )
+            return (<Search placeholder="input search text" style="width: 100%; margin-bottom: 1rem"/>)
         },
         renderIcon (icon) {
             return (icon && (<Icon type={icon}/>)) || null
